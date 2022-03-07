@@ -6,7 +6,19 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            double meal_cost = 100;
+            int tip_percent = 15;
+            int tax_percent = 8;
+            
+            int realmeal_cost = (int)meal_cost;
+
+
+            int  totalcost =(realmeal_cost + tip_percent + tax_percent);
+
+
+
+            Console.WriteLine("總費用:" + totalcost + "包含用餐費用、服務費、稅率");
+            
         }
     }
 }
